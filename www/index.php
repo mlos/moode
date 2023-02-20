@@ -30,19 +30,7 @@ phpSession('close');
 
 $section = basename(__FILE__, '.php');
 
-$display_mode = false;
-$query = $_SERVER['QUERY_STRING'];
-if (!empty($query)) {
-	if ($query == 'display') {
-		$display_mode = true;
-	}
-}
-
-if ($display_mode == false) {
-	$tpl = "indextpl.html";
-	include('header.php');
-	eval("echoTemplate(\"".getTemplate("/var/www/templates/$tpl")."\");");
-	include('footer.php');
-} else {
-	echo DISPLAY;
-}
+$tpl = "indextpl.html";
+include('header.php');
+eval("echoTemplate(\"".getTemplate("/var/www/templates/$tpl")."\");");
+include('footer.php');
