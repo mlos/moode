@@ -32,12 +32,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "server": {
-    "proxy": "http://moode.test"
+    "proxy": "192.168.1.67"
   },
   "remote": {
-    "host": "yourmoodedevice",
+    "host": "192.168.1.67",
     "user": "pi",
-    "password": "moodeaudio"
+    "password": "develop1234"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.0",

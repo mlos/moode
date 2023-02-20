@@ -178,8 +178,8 @@ var gulpSSH = new $.ssh({
 
 // configure the gulp mode options
 const mode = $.mode( {  modes: ["build", "development", "test", "all", "force", "remote"],
-                        default: "development",
-                        verbose: false});
+                        default: "remote",
+                        verbose: true});
 
 const DEPLOY_LOCATION = (mode.test() || mode.remote() ) ? pkg.app.dist: pkg.app.deploy;
 
